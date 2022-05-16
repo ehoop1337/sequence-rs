@@ -62,7 +62,7 @@ Javascript класс для работы с анимацией (секвенц�
 ```javascript
 seq1.on('init', function(e) {
     console.log(e.detail);
-})
+});
 ```
 `update`
 ```javascript
