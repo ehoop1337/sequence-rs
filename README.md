@@ -40,10 +40,10 @@ Javascript класс для работы с анимацией (секвенц�
 
 ## Methods
 `basic`
-| Method | Argument | Description |
-| ------ | ------ | ------ |
-| play | | Запускает анимацию |
-| stop | | Останавливает анимацию |
+| Method | Description |
+| ------ | ------ |
+| play | Запускает анимацию |
+| stop | Останавливает анимацию |
 
 `additional`
 | Method | Argument | Description |
@@ -78,13 +78,13 @@ seq1.on('update', function(e) {
 
 ```js
 const seq = new SequenceRS({
-	canvas: document.querySelector('canvas'),
-	frames: 150,
-	path: '//example.com/sequnce/',
-	name: 'seq_',
-	format: 'jpg',
-	width: 1920,
-	height: 950
+    canvas: document.querySelector('canvas'),
+    frames: 150,
+    path: '//example.com/sequnce/',
+    name: 'seq_',
+    format: 'jpg',
+    width: 1920,
+    height: 950
 });
 ```
 
@@ -93,15 +93,15 @@ const seq = new SequenceRS({
 
 ```js
 const seq = new SequenceRS({
-	canvas: document.querySelector('canvas'),
-	frames: 150,
-	path: '//example.com/sequnce/',
-	name: 'seq_',
-	format: 'jpg',
-	width: 1920,
-	height: 950,
-	webp: true,
-	upload: true,
+    canvas: document.querySelector('canvas'),
+    frames: 150,
+    path: '//example.com/sequnce/',
+    name: 'seq_',
+    format: 'jpg',
+    width: 1920,
+    height: 950,
+    webp: true,
+    upload: true,
     start: true,
     obsession: true,
     fps: 30
