@@ -5,11 +5,11 @@ Javascript класс для работы с анимацией (секвенц�
 ### Installation
 `unminify`
 ```javascript
-    <script src="sequnce-rs.js"></script>
+<script src="sequnce-rs.js"></script>
 ```
 `minify`
 ```javascript
-    <script src="sequnce-rs.min.js"></script>
+<script src="sequnce-rs.min.js"></script>
 ```
 
 ### Settings
