@@ -70,8 +70,8 @@ const seq = new SequenceRS({
     upload: true,
     start: true,
     obsession: true,
-    fps: 30
-    currentFrame: 10
+    fps: 30,
+    currentFrame: 10,
     pad: 4
 });
 ```
@@ -106,6 +106,8 @@ seq.setSize(1920, 950);
 seq.setObsession(true);
 seq.setFPS(30);
 seq.load();
+seq.play();
+seq.stop();
 ```
 
 ### Events
