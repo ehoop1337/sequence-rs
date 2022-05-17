@@ -46,9 +46,9 @@ class SequenceRS {
 		
 		#getPathFrame = (indexFrame) => {
 			if (this.browserIsWebpSupported && this.webp) {
-				return `${this.path + this.name + indexFrame.toString().padStart(5, "0")}.webp`;
+				return `${this.path + this.name + indexFrame.toString().padStart(this.pad, "0")}.webp`;
 			} else {
-				return `${this.path + this.name + indexFrame.toString().padStart(5, "0")}.${this.format}`;
+				return `${this.path + this.name + indexFrame.toString().padStart(this.pad, "0")}.${this.format}`;
 			}
 		}
 		
