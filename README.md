@@ -1,5 +1,4 @@
 # SequnceRS
----
 Javascript class for working with animation (sequence) in canvas
 
 ### Installation
