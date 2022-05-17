@@ -84,7 +84,7 @@ const seq = new SequenceRS({
 
 `additional`
 | Method | Argument | Returns | Description |
-| ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ |
 | load | | ------ | Starts frame loading |
 | setCurrentFrame | int | ------ | Sets the current frame, by index |
 | setSizes | int, int | ------ | Sets dimensions for canvas and frames - width, length |
