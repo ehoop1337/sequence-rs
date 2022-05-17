@@ -1,6 +1,6 @@
 # SequnceRS
 ---
-Javascript класс для работы с анимацией (секвенция) в canvas
+Javascript class for working with animation (sequence) in canvas
 
 ### Installation
 `unminify`
@@ -18,43 +18,43 @@ Javascript класс для работы с анимацией (секвенц�
 
 | Option | Type | Default | Description |
 | ------ | ------ | ------ | ------ |
-| canvas | DOM node |  | Canvas к которому применяем инициализацию |
-| frames | int |  | Количество фреймов |
-| path | string | '/' | Путь до фреймов |
-| name | string |  | Название фремов |
-| format | string | 'jpg' | Формат фреймов по умолчанию |
-| width | boolean | 1920 | Ширина фреймов и canvas |
-| height | boolean | 950 | Высота фреймов и canvas |
+| canvas | DOM node |  | Canvas to which we apply initialization |
+| frames | int |  | Number of frames |
+| path | string | '/' | Path to frames |
+| name | string |  | Name of frames |
+| format | string | 'jpg' | Default frame format |
+| width | boolean | 1920 | Frame width and canvas |
+| height | boolean | 950 | Frame height and canvas |
 
 `Optional`
 
 | Option | Type | Default | Description |
 | ------ | ------ | ------ | ------ |
-| webp | boolean | false | Поддрежка WEBP формата |
-| upload | boolean | false | Загрузка фреймов при инициализации |
-| start | boolean | false | Воспроизводить анимацию при полной загрузке фреймов |
-| obsession | boolean | false | Цикличность анимации |
-| fps | int | 0 | Частота кадров в секунду. 0 по умолчанию выводит 60 fps |
-| currentFrame | int | 0 | Индекс фрейма с которого начнется анимация|
-| pad | int | 5 | Количество цифр после названия фрейма |
+| webp | boolean | false | WEBP format support |
+| upload | boolean | false | Loading frames during initialization |
+| start | boolean | false | Play animation when frames are fully loaded |
+| obsession | boolean | false | Cyclicity of animation |
+| fps | int | 0 | Frame rate per second. 0 outputs 60 fps by default |
+| currentFrame | int | 0 | The index of the frame from which the animation will start |
+| pad | int | 5 | The number of digits after the frame name |
 
 ## Methods
 `basic`
 | Method | Description |
 | ------ | ------ |
-| play | Запускает анимацию |
-| stop | Останавливает анимацию |
+| play | Starts the animation |
+| stop | Stops animation |
 
 `additional`
 | Method | Argument | Description |
 | ------ | ------ | ------ |
-| load | |  Начинает загрузку фрейвом |
-| setCurrentFrame | int | Устанавливает текущий фрейм, по индексу |
-| setSizes | int, int | Устанавливает размеры для canvas и фремов - ширина, длина |
-| setObsession | boolean | Устаналивает цикличность анимации. true - цикличная, false - до последнего фрейма |
-| setFPS | int | Устанавливает частоту кадров для анимации |
-| getLoadingPercent | | Возвращает процент (int) загруженныех фремов во время загрузки, иначе 0 или 100 |
-| getCurrentFrame | | Возвращает текущий фрейм |
+| load | | Starts frame loading |
+| setCurrentFrame | int | Sets the current frame, by index |
+| setSizes | int, int | Sets dimensions for canvas and frames - width, length |
+| setObsession | boolean | Sets the cycle of the animation. true - cyclic, false - up to the last frame |
+| setFPS | int | Sets the frame rate for animation |
+| getLoadingPercent | | Returns the percentage (int) of frames loaded during loading, otherwise 0 or 100 |
+| getCurrentFrame | | Returns the currently active frame |
 
 
 ## Events
