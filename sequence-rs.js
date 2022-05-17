@@ -89,7 +89,7 @@ class SequenceRS {
 		
 		#checkLoaded = () => {
 			if (this.getLoadingPercent() === 100) {
-				this.#eventInit();
+				this.#eventLoaded();
 				if (this.start) {
 					if (this.fps > 0) {
 						this.playFPS();
@@ -211,8 +211,8 @@ class SequenceRS {
 			}));
 		}
 		
-		#eventInit = () => {
-			this.canvas.dispatchEvent(new CustomEvent("init", {
+		#eventLoaded = () => {
+			this.canvas.dispatchEvent(new CustomEvent("loaded", {
 				bubbles: true,
 				detail: {
 					canvas: this.canvas,
