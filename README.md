@@ -1,6 +1,8 @@
 # SequnceRS
 Javascript class for working with animation (sequence) in canvas
 
+[https://jsfiddle.net/ehoop1337/ep6ga1o8/](https://jsfiddle.net/ehoop1337/ep6ga1o8/)
+
 ### Installation
 `unminify`
 ```javascript
