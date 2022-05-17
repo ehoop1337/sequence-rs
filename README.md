@@ -111,14 +111,16 @@ seq.stop();
 ```
 
 ### Events
-`init`
+`loaded`
 ```javascript
-seq1.on('init', function(e) {
+// the event pops up when all frames are fully loaded
+seq1.on('loaded', function(e) {
     console.log(e.detail);
 });
 ```
 `update`
 ```javascript
+// the event pops up every time the frame is rendered
 seq1.on('update', function(e) {
     console.log(e.detail);
 });
