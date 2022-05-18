@@ -116,6 +116,19 @@ const seq = new SequenceRS({
 | setCurrentFrame | | |  |
 | setSizesFrames | | |  |
 
+```javascript
+const seq = new SequenceRS({
+  // ...
+  preventDefault: true
+});
+seq.init();
+seq.load();
+seq.setFPS(30);
+seq.setLoop(true);
+seq.setStartFrame(10);
+seq.getSizeCanvas();
+```
+
 ## Events
 
 SequnceRS comes with a bunch of useful events you can listen. Events can be assigned in two ways:
