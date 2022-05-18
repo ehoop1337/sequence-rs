@@ -176,3 +176,19 @@ seq.on('init', function () {
 });
 seq.init();
 ```
+
+Please note, that this keyword within event handler always points to Swiper instance
+
+| Name | Description |
+| ------ | ------ |
+| init | Fired right after SequnceRS initialization. |
+| load |  |
+| loading |  |
+| loaded |  |
+| start |  |
+| pause |  |
+| play |  |
+| stop |  |
+| restart | The event will be triggered after the animation is restarted |
+| upadte | The event will be triggered after the frame is refreshed |
+| looped | The event will be triggered after rendering the last frame with the `loop` parameter active |
