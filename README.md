@@ -126,7 +126,7 @@ seq.load();
 seq.setFPS(30);
 seq.setLoop(true);
 seq.setStartFrame(10);
-seq.getSizeCanvas();
+let sizesCanvas = seq.getSizeCanvas();
 ```
 
 ## Events
