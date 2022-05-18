@@ -14,13 +14,16 @@ Javascript class for playing animations with individual frames in canvas
 ```
 
 ### CDN
-`unminify`
+`unminify` [https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.min.js](https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.min.js)
+
 ```html
-<script src="[https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.js](https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.js)"></script>
+<script src="https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.js"></script>
+
 ```
-`minify`
+`minify` [https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.min.js](https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.min.js)
+
 ```html
-<script src="[https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.min.js](https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.min.js)"></script>
+<script src="https://cdn.jsdelivr.net/gh/ehoop1337/sequence-rs@master/sequence-rs.min.js"></script>
 ```
 
 ### Settings
