@@ -41,7 +41,7 @@ Let's look on list of all available parameters
 | startFrame | integer | 0 |  | This parameter is responsible for the starting frame in the animation. |
 | loop | boolean | false |  | `true` loops the render. `false` the animation will play once. |
 | fps | integer | 0 |  | Number of frames per second. Value `0` equates to auto-play animationRequestFrame method.  |
-| startAfterLoading | boolean | true |  | `true` after loading the last frame, the rendering immediately plays. `false` the render does not start, you need to use the "start" or "play" method. |
+| startAfterLoading | boolean | true |  | `true` after loading the last frame, the rendering immediately plays. `false` the render does not start, you need to use the `start()` or `play()` method. |
 | preventDefault | boolean | false |  |  |
 | frames | object |  | + | Object with frames settings |
 
