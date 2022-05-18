@@ -29,27 +29,18 @@ Javascript class for playing animations with individual frames in canvas
 
 ## Settings
 
-#### Required
+Let's look on list of all available parameters
 
-| Name | Type | Default | Description |
-| ------ | ------ | ------ | ------ |
-| canvas | object |  | Canvas to which we apply initialization |
-| frames | object |  | Object with frames parameters |
+| Name | Type | Default | Required | Description |
+| ------ | ------ | ------ | ------ | ------ |
+| canvas | object |  | + | Canvas to which we apply initialization |
+| frames | object |  | + | Object with frames parameters |
+| webp | boolean | false |  | WEBP format support |
 
-#### Optional
-
-| Name | Type | Default | Description |
-| ------ | ------ | ------ | ------ |
-| webp | boolean | false | WEBP format support |
-
-## Example
-
-#### default
+#### Example
 
 ```js
 const seq = new SequenceRS({
-
-    // Required
     canvas: document.querySelector('canvas'),
     width: 1920,
     height: 950,
@@ -59,27 +50,6 @@ const seq = new SequenceRS({
         name: 'LKS_seq002_',
         format: 'jpg',
         pad: 5,
-    }
-});
-```
-
-#### full settings
-
-```js
-const seq = new SequenceRS({
-
-    // Required
-    canvas: document.querySelector('canvas'),
-    width: 1920,
-    height: 950,
-    frames: {
-        count: 120,
-        path: 'https://degorov.ru/lks/wp-content/themes/base/assets/i/2/',
-        name: 'LKS_seq002_',
-        format: 'jpg',
-        pad: 5,
-
-        // Optional
         webp: true,
         width: 1920,
         height: 950,
@@ -94,41 +64,6 @@ const seq = new SequenceRS({
     preview: true,
     startAfterLoading: true,
     preventDefault: false,
-    on: {
-        init: function() {
-            console.log('Event: init');
-        },
-        load: function() {
-            console.log('Event: load');
-        },
-        loading: function() {
-            console.log('Event: loading - ', this.loadedFrames, ' / ', this.getLoadingPercent() + '%');
-        },
-        loaded: function() {
-            console.log('Event: loaded');
-        },
-        start: function() {
-            console.log('Event: start');
-        },
-        pause: function() {
-            console.log('Event: pause');
-        },
-        play: function() {
-            console.log('Event: play');
-        },
-        stop: function() {
-            console.log('Event: stop');
-        },
-        restart: function() {
-            console.log('Event: restart');
-        },
-        update: function() {
-            console.log('Event: update', '/ currentFrame: ', this.getCurrentFrame());
-        },
-        loop: function() {
-            console.log('Event: loop');
-        }
-    }
 });
 ```
 
