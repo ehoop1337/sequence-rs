@@ -62,7 +62,7 @@ Parameters of the `frames` object
 | x | number | 0 |  |  |
 | y | number | 0 |  |  |
 
-#### Example
+Example
 
 ```js
 const seq = new SequenceRS({
