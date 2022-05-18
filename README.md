@@ -5,7 +5,7 @@ Javascript class for playing animations with individual frames in canvas
 
 ## Installation
 
-static hosting
+Static hosting
 
 ```html
 <!-- unminify -->
