@@ -1,5 +1,5 @@
 # SequnceRS
-Javascript class for working with animation (sequence) in canvas
+Javascript class for playing animations with individual frames in canvas
 
 [https://jsfiddle.net/ehoop1337/ep6ga1o8/](https://jsfiddle.net/ehoop1337/ep6ga1o8/)
 
