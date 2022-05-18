@@ -36,13 +36,29 @@ Let's look on list of all available parameters
 | canvas | object |  | + | Canvas to which we apply initialization |
 | width | number |  | + |  |
 | height | number |  | + |  |
-| webp | boolean | false |  | WEBP format support |
 | startFrame | number | 0 |  |  |
 | loop | boolean | false |  |  |
 | fps | number | 0 |  |  |
 | startAfterLoading | boolean | false |  |  |
 | preventDefault | boolean | false |  |  |
 | frames | object |  | + | Object with frames parameters |
+
+Parameters of the `frames` object
+
+| Name | Type | Default | Required | Description |
+| ------ | ------ | ------ | ------ | ------ |
+| count | number |  | + |  |
+| path | string |  | + |  |
+| name | string |  | + |  |
+| format | string |  | + |  |
+| pad | number |  | + |  |
+| webp | boolean | false |  |  |
+| width | number |  |  |  |
+| height | number |  |  |  |
+| sx | number | 0 |  |  |
+| sy | number | 0 |  |  |
+| x | number | 0 |  |  |
+| y | number | 0 |  |  |
 
 #### Example
 
