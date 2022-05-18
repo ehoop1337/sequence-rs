@@ -41,7 +41,7 @@ Let's look on list of all available parameters
 | fps | number | 0 |  |  |
 | startAfterLoading | boolean | false |  |  |
 | preventDefault | boolean | false |  |  |
-| frames | object |  | + | Object with frames parameters |
+| frames | object |  | + | Object with frames settings |
 
 Parameters of the `frames` object
 
