@@ -191,6 +191,7 @@ class SequenceRS {
 			this.eventUpdate();
 		} else if (this.loop) {
 			this.currentFrame = 0;
+			this.eventLooped();
 			this.eventUpdate();
 		} else {
 			this.stop();
