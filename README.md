@@ -38,7 +38,7 @@ Let's look on list of all available parameters
 | canvas | object |  | + | Passing an HTML element, for example `document.querySelector('canvas')`. |
 | width | integer |  | + | Sets the width of the canvas. |
 | height | integer |  | + | Sets the heigth of the canvas. |
-| startFrame | integer | 0 |  | This parameter is responsible for the starting frame in the animation. |
+| startFrame | integer | 0 |  | This parameter is responsible for the initial frame in the animation. It is used when initializing by default with the `startAfterLoading: true` parameter or when calling the `start()` method. |
 | loop | boolean | false |  | `true` loops the render. `false` the animation will play once. |
 | fps | integer | 0 |  | Number of frames per second. Value `0` equates to auto-play animationRequestFrame method.  |
 | startAfterLoading | boolean | true |  | `true` after loading the last frame, the rendering immediately plays. `false` the render does not start, you need to use the `start()` or `play()` method. |
