@@ -58,6 +58,7 @@ Javascript class for playing animations with individual frames in canvas
 
 ```js
 const seq = new SequenceRS({
+
     // Required
     canvas: document.querySelector('canvas'),
     width: 1920,
