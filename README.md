@@ -94,16 +94,25 @@ const seq = new SequenceRS({
 
 | Method | Argument | Returns | Description |
 | ------ | ------ | ------ | ------ |
-| play | | | Starts the animation |
-| stop | | | Stops animation |
-| load | | | Starts frame loading |
-| setCurrentFrame | int | | Sets the current frame, by index |
-| setSizes | int, int | | Sets dimensions for canvas and frames - width, length |
-| setObsession | boolean | | Sets the cycle of the animation. true - cyclic, false - up to the last frame |
-| setFPS | int | | Sets the frame rate for animation |
-| getLoadingPercent | | int | Returns the percentage (int) of frames loaded during loading, otherwise 0 or 100 |
-| getCurrentFrame | | int | Returns the currently active frame |
-
+| init | | |  |
+| load | | |  |
+| start | | |  |
+| pause | | |  |
+| play | | |  |
+| stop | | |  |
+| restart | | |  |
+| getStartFrame | | |  |
+| getLoop | | |  |
+| getFPS | | |  |
+| getSizesCanvas | | |  |
+| getCurrentFrame | | |  |
+| getSizesFrames | | |  |
+| setStartFrame | | |  |
+| setLoop | | |  |
+| setFPS | | |  |
+| setSizesCanvas | | |  |
+| setCurrentFrame | | |  |
+| setSizesFrames | | |  |
 
 ## Events
 
