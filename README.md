@@ -177,7 +177,7 @@ seq.on('init', function () {
 seq.init();
 ```
 
-Please note, that this keyword within event handler always points to Swiper instance
+Please note, that `this` keyword within event handler always points to SequnceRS instance
 
 | Name | Description |
 | ------ | ------ |
