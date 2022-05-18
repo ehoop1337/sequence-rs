@@ -77,6 +77,7 @@ const seq = new SequenceRS({
 
 ```js
 const seq = new SequenceRS({
+
     // Required
     canvas: document.querySelector('canvas'),
     width: 1920,
