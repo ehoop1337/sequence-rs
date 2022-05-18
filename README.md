@@ -149,20 +149,28 @@ const seq = new SequenceRS({
 
 ## Events
 
-#### loaded
+SequnceRS comes with a bunch of useful events you can listen. Events can be assigned in two ways:
+
+1. Using on parameter on swiper initialization:
 
 ```javascript
-// the event pops up when all frames are fully loaded
-seq1.on('loaded', function(e) {
-    console.log(e.detail);
+const seq = new SequenceRS({
+  // ...
+  on: {
+    init: function () {
+      console.log('initialized', this);
+    },
+  },
 });
 ```
 
-#### update
+2. Using on method after SequnceRS initialization.
 
 ```javascript
-// the event pops up every time the frame is rendered
-seq1.on('update', function(e) {
-    console.log(e.detail);
+const seq = new SequenceRS({
+  // ...
+});
+seq.on('update', function () {
+  console.log('update', this);
 });
 ```
