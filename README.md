@@ -45,9 +45,9 @@ const seq = new SequenceRS({
     width: 1920,
     height: 950,
     frames: {
-        count: 120,
-        path: 'https://degorov.ru/lks/wp-content/themes/base/assets/i/2/',
-        name: 'LKS_seq002_',
+        count: 100,
+        path: 'https://example.com/frames/',
+        name: 'frame_',
         format: 'jpg',
         pad: 5,
         webp: true,
@@ -59,11 +59,11 @@ const seq = new SequenceRS({
         y: 0,
     },
     loop: true,
-    fps: 60,
-    startFrame: 5,
+    fps: 30,
+    startFrame: 10,
     preview: true,
     startAfterLoading: true,
-    preventDefault: false,
+    preventDefault: false
 });
 ```
 
