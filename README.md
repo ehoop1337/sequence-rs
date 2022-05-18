@@ -159,8 +159,8 @@ const seq = new SequenceRS({
   on: {
     init: function () {
       console.log('initialized', this);
-    },
-  },
+    }
+  }
 });
 ```
 
