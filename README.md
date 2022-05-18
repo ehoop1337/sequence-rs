@@ -169,8 +169,10 @@ const seq = new SequenceRS({
 ```javascript
 const seq = new SequenceRS({
   // ...
+  preventDefault: true
 });
-seq.on('update', function () {
-  console.log('update', this);
+seq.on('init', function () {
+  console.log('init', this);
 });
+seq.init();
 ```
