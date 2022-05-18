@@ -35,9 +35,9 @@ Let's look on list of all available parameters
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| canvas | object |  | + | Passing an HTML element, for example document.querySelector('canvas'). Is a required parameter. |
-| width | number |  | + | Sets the width of the canvas. Is a required parameter. |
-| height | number |  | + | Sets the heigth of the canvas. Is a required parameter. |
+| canvas | object |  | + | Passing an HTML element, for example `document.querySelector('canvas')`. It is required parameter. |
+| width | number |  | + | Sets the width of the canvas. It is required parameter. |
+| height | number |  | + | Sets the heigth of the canvas. It is required parameter. |
 | startFrame | number | 0 |  |  |
 | loop | boolean | false |  |  |
 | fps | number | 0 |  |  |
