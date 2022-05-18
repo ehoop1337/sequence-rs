@@ -35,9 +35,9 @@ Let's look on list of all available parameters
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| canvas | object |  | + | |
-| width | number |  | + |  |
-| height | number |  | + |  |
+| canvas | object |  | + | Passing an HTML element, for example document.querySelector('canvas'). Is a required parameter. |
+| width | number |  | + | Sets the width of the canvas. Is a required parameter. |
+| height | number |  | + | Sets the heigth of the canvas. Is a required parameter. |
 | startFrame | number | 0 |  |  |
 | loop | boolean | false |  |  |
 | fps | number | 0 |  |  |
@@ -136,7 +136,7 @@ if (widthCanvas > 1024) {
 
 SequnceRS comes with a bunch of useful events you can listen. Events can be assigned in two ways:
 
-1. Using on parameter on swiper initialization:
+1. Using on parameter on SequnceRS initialization:
 
 ```javascript
 const seq = new SequenceRS({
@@ -175,5 +175,5 @@ Please note, that `this` keyword within event handler always points to SequnceRS
 | play |  |
 | stop |  |
 | restart |  |
-| upadte | |
+| update | |
 | looped |  |
