@@ -40,8 +40,8 @@ Let's look on list of all available parameters
 | height | integer |  | + | Set the heigth of the canvas. |
 | startFrame | integer | 0 |  | This parameter is responsible for the initial frame in the animation. It is used when initializing by default with the `startAfterLoading: true` parameter or when calling the `start()` method. |
 | loop | boolean | false |  | `true` loops the render. If loop is `false` the animation plays once. |
-| fps | integer | 0 |  | Frames per second of rendering. `0` uses `window.animationRequestFrame()` by default. |
-| startAfterLoading | boolean | true |  | `true` after loading the last frame, the rendering immediately plays. `false` the render does not start, you need to use the `start()` or `play()` method. |
+| fps | integer | 0 |  | Frames per second of rendering. If fps is `0` it is used `window.animationRequestFrame()` by default. |
+| startAfterLoading | boolean | true |  | If parameter after loading the last frame is `true`, the rendering plays immediately. If parameter is `false` the render does not start, you need to use the `start()` or `play()` method. |
 | preventDefault | boolean | false |  | `true` cancels initialization (getting context, canvas size setting, start loading frames) |
 | frames | object |  | + | Object with frames settings. it is required parameter. |
 
