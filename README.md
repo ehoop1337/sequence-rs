@@ -5,6 +5,8 @@ Javascript class for playing animations with individual frames in canvas
 
 ## Installation
 
+static hosting
+
 ```html
 <!-- unminify -->
 <script src="sequence-rs.js"></script>
@@ -13,9 +15,8 @@ Javascript class for playing animations with individual frames in canvas
 ```html
 <!-- minify -->
 <script src="sequence-rs.min.js"></script>
-```
 
-## CDN
+CDN
 
 ```html
 <!-- unminify -->
