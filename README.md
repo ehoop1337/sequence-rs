@@ -58,13 +58,17 @@ Javascript class for playing animations with individual frames in canvas
 
 ```js
 const seq = new SequenceRS({
+    // Required
     canvas: document.querySelector('canvas'),
-    frames: 150,
-    path: '//example.com/sequnce/',
-    name: 'seq_',
-    format: 'jpg',
     width: 1920,
-    height: 950
+    height: 950,
+    frames: {
+        count: 120,
+        path: 'https://degorov.ru/lks/wp-content/themes/base/assets/i/2/',
+        name: 'LKS_seq002_',
+        format: 'jpg',
+        pad: 5,
+    }
 });
 ```
 
