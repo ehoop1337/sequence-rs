@@ -15,6 +15,7 @@ static hosting
 ```html
 <!-- minify -->
 <script src="sequence-rs.min.js"></script>
+```
 
 CDN
 
