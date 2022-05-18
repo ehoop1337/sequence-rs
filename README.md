@@ -77,20 +77,67 @@ const seq = new SequenceRS({
 
 ```js
 const seq = new SequenceRS({
+    // Required
     canvas: document.querySelector('canvas'),
-    frames: 150,
-    path: '//example.com/sequnce/',
-    name: 'seq_',
-    format: 'jpg',
     width: 1920,
     height: 950,
-    webp: true,
-    upload: true,
-    start: true,
-    obsession: true,
-    fps: 30,
-    currentFrame: 10,
-    pad: 4
+    frames: {
+        count: 120,
+        path: 'https://degorov.ru/lks/wp-content/themes/base/assets/i/2/',
+        name: 'LKS_seq002_',
+        format: 'jpg',
+        pad: 5,
+
+        // Optional
+        webp: true,
+        width: 1920,
+        height: 950,
+        sx: 0,
+        sy: 0,
+        x: 0,
+        y: 0,
+    },
+    loop: true,
+    fps: 60,
+    startFrame: 5,
+    preview: true,
+    startAfterLoading: true,
+    preventDefault: false,
+    on: {
+        init: function() {
+            console.log('Event: init');
+        },
+        load: function() {
+            console.log('Event: load');
+        },
+        loading: function() {
+            console.log('Event: loading - ', this.loadedFrames, ' / ', this.getLoadingPercent() + '%');
+        },
+        loaded: function() {
+            console.log('Event: loaded');
+        },
+        start: function() {
+            console.log('Event: start');
+        },
+        pause: function() {
+            console.log('Event: pause');
+        },
+        play: function() {
+            console.log('Event: play');
+        },
+        stop: function() {
+            console.log('Event: stop');
+        },
+        restart: function() {
+            console.log('Event: restart');
+        },
+        update: function() {
+            console.log('Event: update', '/ currentFrame: ', this.getCurrentFrame());
+        },
+        loop: function() {
+            console.log('Event: loop');
+        }
+    }
 });
 ```
 
