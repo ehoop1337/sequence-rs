@@ -116,17 +116,20 @@ const seq = new SequenceRS({
 | setCurrentFrame | | |  |
 | setSizesFrames | | |  |
 
+Example
+
 ```javascript
 const seq = new SequenceRS({
   // ...
-  preventDefault: true
 });
-seq.init();
-seq.load();
-seq.setFPS(30);
-seq.setLoop(true);
-seq.setStartFrame(10);
-let sizesCanvas = seq.getSizeCanvas();
+seq.stop();
+let [widthCanvas, heightCanvas] = seq.getSizesCanvas();
+if (widthCanvas > 1024) {
+    seq.setSizesCanvas(widthCanvas, widthCanvas / 1.333);
+    seq.start();
+} else {
+    seq.restart();
+}
 ```
 
 ## Events
