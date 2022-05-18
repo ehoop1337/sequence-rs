@@ -1,4 +1,4 @@
-# SequnceRS
+# SequenceRS
 Javascript class for playing animations with individual frames in canvas
 
 [https://jsfiddle.net/ehoop1337/ep6ga1o8/](https://jsfiddle.net/ehoop1337/ep6ga1o8/)
@@ -7,12 +7,12 @@ Javascript class for playing animations with individual frames in canvas
 
 ```html
 <!-- unminify -->
-<script src="sequnce-rs.js"></script>
+<script src="sequence-rs.js"></script>
 ```
 
 ```html
 <!-- minify -->
-<script src="sequnce-rs.min.js"></script>
+<script src="sequence-rs.min.js"></script>
 ```
 
 ## CDN
