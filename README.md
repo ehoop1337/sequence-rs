@@ -33,7 +33,7 @@ Let's look on list of all available parameters
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| canvas | object |  | + | Canvas to which we apply initialization |
+| canvas | object |  | + | |
 | width | number |  | + |  |
 | height | number |  | + |  |
 | startFrame | number | 0 |  |  |
@@ -139,7 +139,7 @@ const seq = new SequenceRS({
   preventDefault: true
 });
 seq.on('init', function () {
-  console.log('init', this);
+  console.log('initialized', this);
 });
 seq.init();
 ```
@@ -148,7 +148,7 @@ Please note, that `this` keyword within event handler always points to SequnceRS
 
 | Name | Description |
 | ------ | ------ |
-| init | Fired right after SequnceRS initialization. |
+| init | |
 | load |  |
 | loading |  |
 | loaded |  |
@@ -156,6 +156,6 @@ Please note, that `this` keyword within event handler always points to SequnceRS
 | pause |  |
 | play |  |
 | stop |  |
-| restart | The event will be triggered after the animation is restarted |
-| upadte | The event will be triggered after the frame is refreshed |
-| looped | The event will be triggered after rendering the last frame with the `loop` parameter active |
+| restart |  |
+| upadte | |
+| looped |  |
