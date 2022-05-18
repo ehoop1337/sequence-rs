@@ -35,13 +35,13 @@ Let's look on list of all available parameters
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| canvas | object |  | + | Passing an HTML element, for example `document.querySelector('canvas')`. It is required parameter. |
-| width | number |  | + | Sets the width of the canvas. It is required parameter. |
-| height | number |  | + | Sets the heigth of the canvas. It is required parameter. |
-| startFrame | number | 0 |  |  |
-| loop | boolean | false |  |  |
-| fps | number | 0 |  |  |
-| startAfterLoading | boolean | false |  |  |
+| canvas | object |  | + | Passing an HTML element, for example `document.querySelector('canvas')`. |
+| width | integer |  | + | Sets the width of the canvas. |
+| height | integer |  | + | Sets the heigth of the canvas. |
+| startFrame | integer | 0 |  | This parameter is responsible for the starting frame in the animation. |
+| loop | boolean | false |  | `true` loops the render. `false` the animation will play once. |
+| fps | integer | 0 |  | Number of frames per second. Value `0` equates to auto-play animationRequestFrame method.  |
+| startAfterLoading | boolean | true |  | `true` after loading the last frame, the rendering immediately plays. `false` the render does not start, you need to use the "start" or "play" method. |
 | preventDefault | boolean | false |  |  |
 | frames | object |  | + | Object with frames settings |
 
@@ -49,18 +49,18 @@ Parameters of the `frames` object
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| count | number |  | + |  |
+| count | integer |  | + |  |
 | path | string |  | + |  |
 | name | string |  | + |  |
 | format | string |  | + |  |
-| pad | number |  | + |  |
+| pad | integer |  | + |  |
 | webp | boolean | false |  |  |
-| width | number |  |  |  |
-| height | number |  |  |  |
-| sx | number | 0 |  |  |
-| sy | number | 0 |  |  |
-| x | number | 0 |  |  |
-| y | number | 0 |  |  |
+| width | integer |  |  |  |
+| height | integer |  |  |  |
+| sx | integer | 0 |  |  |
+| sy | integer | 0 |  |  |
+| x | integer | 0 |  |  |
+| y | integer | 0 |  |  |
 
 Example
 
