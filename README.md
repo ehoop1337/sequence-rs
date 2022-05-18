@@ -122,11 +122,11 @@ Example
 const seq = new SequenceRS({
   // ...
 });
-seq.stop();
+seq.pause();
 let [widthCanvas, heightCanvas] = seq.getSizesCanvas();
 if (widthCanvas > 1024) {
     seq.setSizesCanvas(widthCanvas, widthCanvas / 1.333);
-    seq.start();
+    seq.play();
 } else {
     seq.restart();
 }
