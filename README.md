@@ -34,8 +34,8 @@ Let's look on list of all available parameters
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | canvas | object |  | + | Canvas to which we apply initialization |
-| width | object |  | + |  |
-| height | object |  | + |  |
+| width | number |  | + |  |
+| height | number |  | + |  |
 | webp | boolean | false |  | WEBP format support |
 | startFrame | number | 0 |  |  |
 | loop | boolean | false |  |  |
