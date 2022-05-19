@@ -34,7 +34,7 @@ CDN
 Let's look on list of all available parameters
 
 | Name | Type | Default | Required | Description |
-| ------ | ------ | ------ | ------ | ------ |
+| ---------- | ------ | ------ | ------ | ------ |
 | canvas | object |  | + | Passing an HTML element, for example `document.querySelector('canvas')`. |
 | width | number |  | + | Set the width of the canvas. |
 | height | number |  | + | Set the heigth of the canvas. |
