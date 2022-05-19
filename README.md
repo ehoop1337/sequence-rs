@@ -50,18 +50,18 @@ Parameters of the `frames` object
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| count | number |  | + |  |
-| path | string |  | + |  |
-| name | string |  | + |  |
-| format | string |  | + |  |
+| count | number |  | + | Number of uploaded frames. |
+| path | string |  | + | Url path to frames. |
+| name | string |  | + | Name of frames. |
+| format | string |  | + | Default frame format. |
 | pad | number |  | + |  |
-| webp | boolean | false |  |  |
-| width | number |  |  |  |
-| height | number |  |  |  |
-| sx | number | 0 |  |  |
-| sy | number | 0 |  |  |
-| x | number | 0 |  |  |
-| y | number | 0 |  |  |
+| webp | boolean | false |  | WEBP format support. Cancels the default format if the browser supports WEBP, you need to duplicate the frames in WEBP format in the same folder.  |
+| width | number |  |  | The width of the sub-rectangle of the source frame to draw into the destination context. |
+| height | number |  |  | The height of the sub-rectangle of the source frame to draw into the destination context.  |
+| sx | number | 0 |  | The x-axis coordinate of the top left corner of the sub-rectangle of the source frame to draw into the destination context. |
+| sy | number | 0 |  | The y-axis coordinate of the top left corner of the sub-rectangle of the source frame to draw into the destination context. |
+| x | number | 0 |  | The x-axis coordinate in the destination canvas at which to place the top-left corner of the source frame. |
+| y | number | 0 |  | The y-axis coordinate in the destination canvas at which to place the top-left corner of the source frame |
 
 Example
 
