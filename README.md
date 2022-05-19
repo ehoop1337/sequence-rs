@@ -112,7 +112,7 @@ const seq = new SequenceRS({
 | getSizesFrames | | |  |
 | setStartFrame | | |  |
 | setLoop | | |  |
-| setFPS | | |  |
+| setFPS | | | Изменяет частоту кадров в секунду. Возможно использовать во время рендеринга, без прерывания анимации, последовательность: вызвает метод `stop()`, изменяет значение `fps`, вызвает метод `start()` |
 | setSizesCanvas | | |  |
 | setCurrentFrame | | |  |
 | setSizesFrames | | |  |
