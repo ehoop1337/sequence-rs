@@ -97,13 +97,13 @@ const seq = new SequenceRS({
 
 | Method | Argument | Returns | Description |
 | ------ | ------ | ------ | ------ |
-| init | | boolean | Initialization (getting context, canvas size setting, start loading frames) |
-| load | | boolean | Сauses frames to load |
-| start | number | boolean | Starts rendering from the specified frame in `startFrame`. If an argument (the index of the frame) is passed, it makes it the current one. |
-| pause | | boolean | Pauses rendering |
-| play |  | boolean | Removes rendering from pause. |
-| stop | number | boolean | Stops rendering. If an argument (the index of the frame) is passed, it makes it the current one. |
-| restart | number | boolean | Restarts rendering. If an argument (the index of the frame) is passed, it makes it the current one. |
+| init | | boolean | Initialization (getting context, canvas size setting, start loading frames). Returns `true` if successful. |
+| load | | | Сauses frames to load. |
+| start | number | boolean | Starts rendering from the specified frame in `startFrame`. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
+| pause | | boolean | Pauses rendering. Returns `true` if successful. |
+| play |  | boolean | Removes rendering from pause. Returns `true` if successful. |
+| stop | number | boolean | Stops rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
+| restart | number | boolean | Restarts rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
 | getStartFrame | | |  |
 | getLoop | | |  |
 | getFPS | | |  |
