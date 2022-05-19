@@ -49,7 +49,7 @@ Let's look on list of all available parameters
 Parameters of the `frames` object
 
 | Name | Type | Default | Required | Description |
-| ------ | ------ | ------ | ------ | ------ |
+| ---------- | ------ | ------ | ------ | ------ |
 | count | number |  | + | Number of uploaded frames. |
 | path | string |  | + | Url path to frames. |
 | name | string |  | + | Name of frames. |
