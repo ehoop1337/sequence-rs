@@ -111,11 +111,11 @@ const seq = new SequenceRS({
 | getCurrentFrame | | |  |
 | getSizesFrames | | |  |
 | setStartFrame | | |  |
-| setLoop | | |  |
+| setLoop | boolean | boolean |  |
 | setFPS | number | boolean | Изменяет частоту кадров в секунду. Передача аргумента обязательна (от 0 до 60). Возможно использовать во время рендеринга, без прерывания анимации, последовательность: вызвает метод `stop()`, изменяет значение `fps`, вызвает метод `start()`. Возвращает `true` в случае успеха, иначе `false`. |
-| setSizesCanvas | | |  |
-| setCurrentFrame | | |  |
-| setSizesFrames | | |  |
+| setSizesCanvas | number, number | boolean |  |
+| setCurrentFrame | number, number | boolean |  |
+| setSizesFrames | number, number | boolean |  |
 
 Example
 
