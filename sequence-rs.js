@@ -1,5 +1,5 @@
 class SequenceRS {
-					
+						
 	constructor (settings) {
 		this.context = null;
 		this.arrayFrames = [];
@@ -199,8 +199,12 @@ class SequenceRS {
 	}
 
 	setStartFrame = (indexFrame) => {
-		this.startFrame = indexFrame;
-		return true;
+		if (typeof(indexFrame) == 'number' && indexFrame >= 0 && indexFrame < this.countFrames) {
+			this.startFrame = indexFrame;
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	getStartFrame = () => {
@@ -208,17 +212,31 @@ class SequenceRS {
 	}
 
 	setLoop = (isLoop) => {
-		this.loop = isLoop;
-		return true;
+		if (typeof(isLoop) == 'boolean' && this.loop != isLoop) {
+			this.loop = isLoop;
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	getLoop = () => {
 		return this.loop;
 	}
 
-	setFPS = (num) => {
-		this.fps = num;
-		return true;
+	setFPS = (fps) => {
+		if (typeof(fps) == 'number' && !isNaN(fps) && fps >= 0 && fps <= 60) {
+			if (this.animation === true) {
+				this.stop(this.currentFrame);
+				this.fps = fps;
+				this.start(this.currentFrame);
+			} else {
+				this.fps = fps;
+			}
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	getFPS = () => {
@@ -226,11 +244,15 @@ class SequenceRS {
 	}
 
 	setSizesCanvas = (width, height) => {
-		this.width = width;
-		this.height = height;
-		this.canvas.setAttribute('width', width);
-		this.canvas.setAttribute('height', height);
-		return true;
+		if (typeof(width) == 'number' && !isNaN(width) && typeof(height) == 'number' && !isNaN(height)) {
+			this.width = width;
+			this.height = height;
+			this.canvas.setAttribute('width', width);
+			this.canvas.setAttribute('height', height);
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	getSizesCanvas = () => {
@@ -238,9 +260,13 @@ class SequenceRS {
 	}
 
 	setSizesFrames = (width, height) => {
-		this.widthFrames = width;
-		this.heightFrames = height;
-		return true;
+		if (typeof(width) == 'number' && !isNaN(width) && typeof(height) == 'number' && !isNaN(height)) {
+			this.widthFrames = width;
+			this.heightFrames = height;
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	getSizesFrames = () => {
@@ -248,8 +274,12 @@ class SequenceRS {
 	}
 
 	setCurrentFrame = (indexFrame) => {
-		this.currentFrame = indexFrame;
-		return true;
+		if (typeof(indexFrame) == 'number' && !isNaN(indexFrame) && indexFrame >= 0 && indexFrame < this.countFrames) {
+			this.currentFrame = indexFrame;
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	getCurrentFrame = () => {
