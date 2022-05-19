@@ -30,8 +30,8 @@ class SequenceRS {
 		this.loop = settings.loop || false;
 		this.fps = settings.fps || 0;
 		this.startFrame = settings.startFrame || 0;
-		this.renderFirstFrame = settings.preview || false;
-		this.startAfterLoading = settings.startAfterLoading || false;
+		this.renderFirstFrame = settings.preview == false ? false : true;
+		this.startAfterLoading = settings.startAfterLoading == false ? false : true;
 		this.events = settings.on || {};
 		this.preventDefault = settings.preventDefault || false;
 		this.addListener();
