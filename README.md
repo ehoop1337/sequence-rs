@@ -36,11 +36,12 @@ Let's look on list of all available parameters
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | canvas | object |  | + | Passing an HTML element, for example `document.querySelector('canvas')`. |
-| width | integer |  | + | Set the width of the canvas. |
-| height | integer |  | + | Set the heigth of the canvas. |
-| startFrame | integer | 0 |  | This parameter is responsible for the initial frame in the animation. It is used when initializing by default with the `startAfterLoading: true` parameter or when calling the `start()` method. |
+| width | number |  | + | Set the width of the canvas. |
+| height | number |  | + | Set the heigth of the canvas. |
+| startFrame | number | 0 |  | This parameter is responsible for the initial frame in the animation. It is used when initializing by default with the `startAfterLoading: true` parameter or when calling the `start()` method. |
 | loop | boolean | false |  | `true` loops the render. If loop is `false` the animation plays once. |
-| fps | integer | 0 |  | Frames per second of rendering. If fps is `0` it is used `window.animationRequestFrame()` by default. |
+| fps | number | 0 |  | Frames per second of rendering. If fps is `0` it is used `window.animationRequestFrame()` by default. |
+| preview | boolean | true |  | |
 | startAfterLoading | boolean | true |  | If parameter after loading the last frame is `true`, the rendering plays immediately. If parameter is `false` the render does not start, you need to use the `start()` or `play()` method. |
 | preventDefault | boolean | false |  | `true` cancels initialization (getting context, canvas size setting, start loading frames) |
 | frames | object |  | + | Object with frames settings. it is required parameter. |
@@ -49,18 +50,18 @@ Parameters of the `frames` object
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| count | integer |  | + |  |
+| count | number |  | + |  |
 | path | string |  | + |  |
 | name | string |  | + |  |
 | format | string |  | + |  |
-| pad | integer |  | + |  |
+| pad | number |  | + |  |
 | webp | boolean | false |  |  |
-| width | integer |  |  |  |
-| height | integer |  |  |  |
-| sx | integer | 0 |  |  |
-| sy | integer | 0 |  |  |
-| x | integer | 0 |  |  |
-| y | integer | 0 |  |  |
+| width | number |  |  |  |
+| height | number |  |  |  |
+| sx | number | 0 |  |  |
+| sy | number | 0 |  |  |
+| x | number | 0 |  |  |
+| y | number | 0 |  |  |
 
 Example
 
