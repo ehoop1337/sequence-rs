@@ -34,7 +34,7 @@ CDN
 Let's look on list of all available parameters
 
 | Name | Type | Default | Required | Description |
-| ---------- | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | canvas | object |  | + | Passing an HTML element, for example `document.querySelector('canvas')`. |
 | width | number |  | + | Set the width of the canvas. |
 | height | number |  | + | Set the heigth of the canvas. |
@@ -49,7 +49,7 @@ Let's look on list of all available parameters
 Parameters of the `frames` object
 
 | Name | Type | Default | Required | Description |
-| ---------- | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | count | number |  | + | Number of uploaded frames. |
 | path | string |  | + | Url path to frames. |
 | name | string |  | + | Name of frames. |
