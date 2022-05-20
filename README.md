@@ -104,6 +104,7 @@ const seq = new SequenceRS({
 | play |  | boolean | Removes rendering from pause. Returns `true` if successful. |
 | stop | number | boolean | Stops rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
 | restart | number | boolean | Restarts rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
+| drawFrame | number | boolean | Renders one frame. We pass the index of the desired frame to the argument. Returns `true` if successful. |
 | getStartFrame | | |  |
 | getLoop | | |  |
 | getFPS | | |  |
