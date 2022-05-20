@@ -56,8 +56,8 @@ Parameters of the `frames` object
 | format | string |  | + | Default frame format. |
 | pad | number |  | + |  |
 | webp | boolean | false |  | WEBP format support. Cancels the default format if the browser supports WEBP, you need to duplicate the frames in WEBP format in the same folder.  |
-| width | number |  |  | The width of the sub-rectangle of the source frame to draw into the destination context. |
-| height | number |  |  | The height of the sub-rectangle of the source frame to draw into the destination context.  |
+| width | number |  |  | The width of the sub-rectangle of the source frame to draw into the destination context. By default, it is equal to the canvas width. |
+| height | number |  |  | The height of the sub-rectangle of the source frame to draw into the destination context. by default, it is equal to the canvas height. |
 | sx | number | 0 |  | The x-axis coordinate of the top left corner of the sub-rectangle of the source frame to draw into the destination context. |
 | sy | number | 0 |  | The y-axis coordinate of the top left corner of the sub-rectangle of the source frame to draw into the destination context. |
 | x | number | 0 |  | The x-axis coordinate in the destination canvas at which to place the top-left corner of the source frame. |
