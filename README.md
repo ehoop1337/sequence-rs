@@ -35,7 +35,7 @@ Let's look on list of all available parameters
 
 | Name | Type | Default | Required | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| canvas | object / string |  | + | You need to pass a `string` with a selector or a DOM `object`, for example `document.querySelector('canvas')`. |
+| canvas | object / string |  | + | You need to pass a `string` with a selector or a `DOMobject`, for example `document.querySelector('canvas')`. |
 | width | number |  | + | Set the width of the canvas. |
 | height | number |  | + | Set the heigth of the canvas. |
 | startFrame | number | 0 |  | This parameter is responsible for the initial frame in the animation. It is used when initializing by default with the `startAfterLoading: true` parameter or when calling the `start()` method. |
