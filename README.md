@@ -41,7 +41,7 @@ Let's look on list of all available parameters
 | startFrame | number | 0 |  | This parameter is responsible for the initial frame in the animation. It is used when initializing by default with the `startAfterLoading: true` parameter or when calling the `start()` method. |
 | loop | boolean | false |  | `true` loops the render. If loop is `false` the animation plays once. |
 | fps | number | 0 |  | Frames per second of rendering. If fps is `0` it is used `window.animationRequestFrame()` by default. |
-| preview | boolean | true |  | |
+| preview | boolean | true |  | Will the frame `startFrame` or `0` be rendered during loading. |
 | startAfterLoading | boolean | true |  | If parameter after loading the last frame is `true`, the rendering plays immediately. If parameter is `false` the render does not start, you need to use the `start()` or `play()` method. |
 | preventDefault | boolean | false |  | `true` cancels initialization (getting context, canvas size setting, start loading frames) |
 | frames | object |  | + | Object with frames settings. it is required parameter. |
