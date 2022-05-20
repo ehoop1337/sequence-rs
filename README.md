@@ -136,9 +136,9 @@ if (widthCanvas > 1024) {
 
 ## Events
 
-SequnceRS comes with a bunch of useful events you can listen. Events can be assigned in two ways:
+SequenceRS comes with a bunch of useful events you can listen. Events can be assigned in two ways:
 
-1. Using on parameter on SequnceRS initialization:
+1. Using on parameter on SequenceRS initialization:
 
 ```javascript
 const seq = new SequenceRS({
@@ -151,7 +151,7 @@ const seq = new SequenceRS({
 });
 ```
 
-2. Using on method after SequnceRS initialization.
+2. Using on method after SequenceRS initialization.
 
 ```javascript
 const seq = new SequenceRS({
@@ -164,7 +164,7 @@ seq.on('init', function () {
 seq.init();
 ```
 
-Please note, that `this` keyword within event handler always points to SequnceRS instance
+Please note, that `this` keyword within event handler always points to SequenceRS instance
 
 | Name | Description |
 | ------ | ------ |
