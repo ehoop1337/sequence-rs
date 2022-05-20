@@ -54,7 +54,7 @@ Parameters of the `frames` object
 | path | string |  | + | Url path to frames. |
 | name | string |  | + | Name of frames. |
 | format | string |  | + | Default frame format. |
-| pad | number |  | + |  |
+| pad | number |  | + | The number of characters (filled with `0`) in the string that comes after the `name` |
 | webp | boolean | false |  | WEBP format support. Cancels the default format if the browser supports WEBP, you need to duplicate the frames in WEBP format in the same folder.  |
 | width | number | instance.width |  | The width of the sub-rectangle of the source frame to draw into the destination context. By default, it is equal to the canvas width. |
 | height | number | instance.height |  | The height of the sub-rectangle of the source frame to draw into the destination context. by default, it is equal to the canvas height. |
