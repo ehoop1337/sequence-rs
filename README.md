@@ -105,18 +105,18 @@ const seq = new SequenceRS({
 | stop | number | boolean | Stops rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
 | restart | number | boolean | Restarts rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
 | drawFrame | number | boolean | Renders one frame. We pass the index of the desired frame to the argument. Returns `true` if successful. |
-| getStartFrame | | |  |
-| getLoop | | |  |
-| getFPS | | |  |
-| getSizesCanvas | | |  |
-| getCurrentFrame | | |  |
-| getSizesFrames | | |  |
-| setStartFrame | | |  |
-| setLoop | boolean | boolean |  |
+| getStartFrame | | | Получает индекс фрейма, который назачент на стартовую позицию. |
+| getLoop | | | Получает булево занение, зациклена ли анимация или нет. |
+| getFPS | | | Получает установленное значение парметра `fps`. |
+| getSizesCanvas | | | Получает массив из двух значений ширину и высоту - размеры `canvas`. |
+| getCurrentFrame | | | Получает текщей фрейм. |
+| getSizesFrames | | | Получает массив состоящий из двух значений, ширина и высота. |
+| setStartFrame | | | Устаналивает стартовый фрейм по его индексу. Возвращает `true` в случае успеха, иначе `false` |
+| setLoop | boolean | boolean | Если передано `true`, то анимация будет зацикленной, если `false` остановится на последнем фрейме. Возвращает `true` в случае успеха, иначе `false`. |
 | setFPS | number | boolean | Изменяет частоту кадров в секунду. Передача аргумента обязательна (от 0 до 60). Возможно использовать во время рендеринга, без прерывания анимации, последовательность: вызвает метод `stop()`, изменяет значение `fps`, вызвает метод `start()`. Возвращает `true` в случае успеха, иначе `false`. |
-| setSizesCanvas | number, number | boolean |  |
-| setCurrentFrame | number | boolean |  |
-| setSizesFrames | number, number | boolean |  |
+| setSizesCanvas | number, number | boolean | Устанавливает ширину и высоту `canvas`. Первый параметр - ширина, второй - высота. Возвращает `true` в случае успеха, иначе `false`. |
+| setCurrentFrame | number | boolean | Устанвливает текущий фрейм. Возвращает `true` в случае успеха, иначе `false`. |
+| setSizesFrames | number, number | boolean | Устанавливает ширину и высоту фреймов. Первый параметр - ширина, второй - высота. Возвращает `true` в случае успеха, иначе `false`. |
 
 Example
 
