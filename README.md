@@ -105,7 +105,7 @@ const seq = new SequenceRS({
 | stop | number | boolean | Stops rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
 | restart | number | boolean | Restarts rendering. If an argument (the index of the frame) is passed, it makes it the current one. Returns `true` if successful. |
 | drawFrame | number | boolean | Renders one frame. We pass the index of the desired frame to the argument. Returns `true` if successful. |
-| getStartFrame | number | | Получает индекс фрейма, который назначен на стартовую позицию. |
+| getStartFrame | | number | Получает индекс фрейма, который назначен на стартовую позицию. |
 | getLoop | | boolean | Получает булево занение, зациклена ли анимация или нет. |
 | getFPS | | number | Получает установленное значение парметра `fps`. |
 | getSizesCanvas | | [number, number] | Получает массив из двух значений ширину и высоту - размеры `canvas`. |
